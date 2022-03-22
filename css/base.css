@@ -1,0 +1,23 @@
+:root {
+    --branco: #fff2e7;
+    --branco-cinza: #ecd6c4;
+    --azul-forte: #132235;
+    --preto: #000
+
+    --montserrat: 'Montserrat', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--azul-forte);
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 940px;
+    }
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4LIFE - Home</title>
+
+    
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/rodape.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="assets/logo-f4life1.png" alt="Logo da L4life" class="container">
+        <nav class="cabecalho-navegacao">
+            <a href="#quemSomos" class="cabecalho-navegacao-item">Quem Somos</a>
+            <a href="#faleConosco" class="cabecalho-navegacao-item">Fale Conosco</a>
+        </nav>
+    </header>
+    <main class="conteudo" id="quemSomos">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">F4Life</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">F4Life é uma empresa de aluguéis de repúblicas para
+                    pessoas universitárias.</h2>
+                <p class="conteudo-principal-escrito-paragrafo">Similar aos modelos de Quinto Andar e Loft, a empresa
+                    realiza reformas e prepara moradias para recepção de pessoas universitárias <br> em um ambiente
+                    específico e otimizado para a vida de graduação.</p>
+            </div>
+            <img class="conteudo-principal-imagem" src="assets/ambiente-otimizado.jpg" alt="Exemplo de ambiente otimizado">
+        </section>
+        <section class="formulario" id="faleConosco">
+            <h2 class="formulario-titulo">Fale Conosco</h2>
+            <div class="formulario-container">
+                <form onsubmit="validacao()">
+                    <fieldset>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label>Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="15"></textarea>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+                <p id="resposta"></p>
+                <button type=""></button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape container">
+        <ul class="rodape-social">
+            <li><a href="https://www.facebook.com/" target="_blank" class="rodape-midia"><img src="assets/facebook.png" alt="Ícone do Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank" class="rodape-midia"><img src="assets/twitter.png" alt="Ícone do twitter"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" class="rodape-midia"><img src="assets/instagram.png" alt="Ícone do Instagram"></a></li>
+        </ul>
+        <img src="assets/logo-f4life1.png" alt="Logo da L4life" class="rodape-logo">
+        <nav>
+            <ul class="rodape-navegacao">
+                <li class="rodape-link"><a href="#quemSomos">Quem Somos</a></li>
+                <li class="rodape-link"><a href="#faleConosco">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/validando-campos.js"></script>
+</body>
+
+</html>
